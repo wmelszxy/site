@@ -266,3 +266,257 @@ h1 em,h2 em { color:var(--plum); font-weight:400; }
     border-bottom: 0;
   }
 }
+
+/* ==========================================
+   ARCANA V3 — MÍSTICO, VIBRANTE E EDITORIAL
+   Cole no final do style.css
+========================================== */
+
+:root {
+  --bg: #11091b;
+  --bg-2: #1c1029;
+  --panel: #251334;
+  --panel-2: #352047;
+  --ink: #f8efff;
+  --muted: #c5b2d2;
+  --plum: #c18aff;
+  --plum-deep: #713ba0;
+  --gold: #f1c778;
+  --line: rgba(214, 165, 255, .24);
+}
+
+/* Fundo com mais profundidade */
+body {
+  background:
+    radial-gradient(ellipse at 15% 5%, rgba(112, 48, 158, .18), transparent 36%),
+    radial-gradient(ellipse at 90% 35%, rgba(186, 62, 157, .10), transparent 32%),
+    var(--bg);
+}
+
+/* Cabeçalho */
+.site-header {
+  background: rgba(17, 9, 27, .88);
+  border-bottom-color: rgba(193, 138, 255, .3);
+}
+
+.brand-sigil {
+  color: #e5a0ff;
+  text-shadow: 0 0 18px rgba(193, 138, 255, .55);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #e5a0ff;
+}
+
+/* Pequenos títulos */
+.eyebrow {
+  color: #e5a0ff;
+}
+
+.eyebrow-mark,
+.tiny-star {
+  color: var(--gold);
+}
+
+/* Hero: mais contraste e cor */
+.hero-visual {
+  background:
+    radial-gradient(ellipse at 50% 45%, #633583 0%, #351849 38%, #180d25 72%, #11091b 100%);
+}
+
+.hero-visual::before {
+  opacity: .4;
+  background:
+    repeating-linear-gradient(
+      122deg,
+      transparent 0 9px,
+      rgba(255, 255, 255, .045) 10px 11px
+    );
+}
+
+.hero-card {
+  background: linear-gradient(145deg, #603779, #21112e 72%);
+  border-color: #f1c778;
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, .5),
+    0 0 35px rgba(193, 138, 255, .13);
+}
+
+.hero-card-front {
+  background: linear-gradient(145deg, #8245a0, #291336 75%);
+}
+
+.hero h1 em,
+h2 em {
+  color: #d7a0ff;
+}
+
+/* Botões com mais presença */
+.button-light {
+  color: #1b1024;
+  background: linear-gradient(135deg, #f5d58f, #e5a9e9);
+}
+
+.button-light:hover {
+  color: #160a20;
+  background: #fff0c7;
+  box-shadow: 0 0 25px rgba(229, 169, 233, .25);
+}
+
+.button-outline {
+  border-color: rgba(193, 138, 255, .55);
+}
+
+.button-outline:hover {
+  color: #1b1024;
+  background: #d7a0ff;
+  border-color: #d7a0ff;
+}
+
+/* Seções */
+.manifesto-symbol,
+.manifesto-copy h2 em {
+  color: #d7a0ff;
+}
+
+.services {
+  background: linear-gradient(
+    180deg,
+    rgba(87, 42, 119, .12),
+    transparent 85%
+  );
+}
+
+.service-card {
+  transition: background .25s ease, transform .25s ease;
+}
+
+.service-card:hover {
+  background: linear-gradient(
+    145deg,
+    rgba(125, 65, 165, .17),
+    rgba(193, 138, 255, .035)
+  );
+}
+
+.service-card h3 {
+  color: #f8efff;
+}
+
+.service-illustration {
+  background:
+    radial-gradient(circle, rgba(161, 88, 204, .32), transparent 70%);
+}
+
+.ill-card,
+.book-shape {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, .22);
+}
+
+/* Catálogo de cursos e materiais */
+.featured {
+  background:
+    radial-gradient(ellipse at 10% 15%, rgba(121, 58, 164, .2), transparent 45%),
+    linear-gradient(180deg, rgba(54, 27, 74, .18), transparent);
+}
+
+.product-cover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .12);
+}
+
+.product-cover:hover {
+  box-shadow: 0 15px 40px rgba(154, 91, 204, .16);
+}
+
+.cover-arcana {
+  background:
+    radial-gradient(circle at 50% 40%, #8651a6, #382044 55%, #1a1025 85%);
+}
+
+.cover-minores {
+  background:
+    radial-gradient(circle at 50% 40%, #a34891, #54255f 50%, #1a1025 85%);
+}
+
+.cover-course {
+  background:
+    radial-gradient(circle at 50% 45%, #5946a3, #30204e 55%, #130d20 85%);
+}
+
+.cover-title em {
+  color: #e6a4ff;
+}
+
+.course-orbit {
+  border-color: #f1c778;
+}
+
+/* Frase de impacto */
+.quote-section {
+  background:
+    radial-gradient(ellipse at center, rgba(113, 59, 160, .32), transparent 72%);
+}
+
+.quote-section h2 {
+  color: #f8efff;
+}
+
+.quote-section h2 em {
+  color: #e5a0ff;
+}
+
+/* Formulário */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #c18aff;
+  box-shadow: 0 0 0 3px rgba(193, 138, 255, .12);
+  outline: none;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  border-radius: 5px;
+}
+
+.submit-button {
+  box-shadow: 0 5px 24px rgba(193, 138, 255, .12);
+}
+
+/* Links e detalhes */
+.text-link span,
+.service-link span,
+.product-link span,
+.contact-sigil {
+  color: var(--gold);
+}
+
+a:hover {
+  transition: color .2s ease;
+}
+
+::selection {
+  background: #c18aff;
+  color: #170d24;
+}
+
+/* Tema claro: preservar contraste */
+body.light-theme {
+  --plum: #7e3e9e;
+  --plum-deep: #d7b5e9;
+  --gold: #95652c;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 720px) {
+  .hero-visual {
+    background:
+      radial-gradient(ellipse at 50% 45%, #633583 0%, #351849 42%, #11091b 100%);
+  }
+
+  .service-card:hover {
+    background: transparent;
+  }
+}
